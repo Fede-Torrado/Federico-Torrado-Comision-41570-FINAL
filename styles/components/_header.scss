@@ -1,0 +1,41 @@
+@import "../abstracts/colors";
+
+.navbar{
+    background-color:$grisC;
+}
+
+.nav-item a {
+    color: $beigeC;
+    &:hover{
+        color: $violetaC;
+    }
+    img {
+        width:30px;
+        filter: invert(80%) sepia(26%) saturate(362%) hue-rotate(357deg) brightness(85%) contrast(85%);
+   } 
+}
+
+img.navbar-toggler {
+    border:solid 1px $beigeC;
+}
+
+.container-fluid a img.logo-c{
+    width:85%;
+}
+
+@media screen and (min-width: 1024px) {
+   
+    .nav-item{
+       padding-left: 50px;
+       img {
+            width:30px;
+            filter: invert(80%) sepia(26%) saturate(362%) hue-rotate(357deg) brightness(85%) contrast(85%);
+       }
+    }
+    ul.navbar-nav{
+        margin-right: 5%;
+    }
+    a.navbar-brand{
+        margin-left: 5%;
+    } 
+}

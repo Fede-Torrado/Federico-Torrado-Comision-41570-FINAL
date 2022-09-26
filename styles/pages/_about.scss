@@ -1,0 +1,68 @@
+@import "../abstracts/colors";
+
+.about {
+    background-image: $backgroundGradient;
+    padding: 15px 10px 30px 10px;        
+    .about__content {
+        h1,
+        h2 {
+            font-size: 25pt;
+            font-weight: 800;
+            color: $grisC;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            width: 90%;
+            margin: auto;
+            line-height:26pt
+        }
+        p{
+            color: $grisC;
+            font-size: 12pt;
+            line-height: 16pt;
+            width: 90%;
+            margin: auto;
+            margin-bottom: 20px;
+            a{
+                color: $violetaC;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+    .about__video iframe{
+        width: 100%;
+        height: 600px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about {   
+        .about__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1:hover,
+            h2:hover{
+                font-size: 26pt;
+                color:$violetaC;
+            } 
+            p {
+                a:hover{
+                    cursor: pointer;  
+                }
+            }   
+        }
+        .about__video{
+            iframe {
+                padding-right: 5%;
+            }
+        }
+    }        
+}    
+
+
+
+
+
+

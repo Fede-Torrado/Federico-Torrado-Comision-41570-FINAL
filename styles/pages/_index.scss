@@ -1,0 +1,104 @@
+@import "../abstracts/colors";
+@import "../abstracts/extends";
+@import "../abstracts/mixins";
+
+
+.mainContent-background{
+    background-image: $backgroundGradient;
+    padding: 15px;
+
+    .mainContent{
+        .mainContent__text{
+            h1{
+                font-size: 40px;
+                line-height: 40px;
+                color: $grisC;
+                letter-spacing: -1pt;
+                padding-left: 5%;
+                
+            }
+            h1 .carpas{
+                font-size: 55px;
+                line-height: 50px;
+                font-weight: 800;
+                color: $violetaC;
+                
+            }
+            p{
+                color: $grisC;
+                padding-left: 5%;
+                margin-top: 5px;
+                font-size: 11pt;
+                line-height: 14.5pt;
+            }
+
+            a {
+                display:none;
+                button {
+                    @extend .button1;
+                }
+            }
+
+        }
+        .mainContent__img{
+            
+                text-align: center;
+            
+            img{
+                width: 90%;
+                max-width: 600px;
+                border-radius: 10px;
+            }
+        }    
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .mainContent-background{
+        .mainContent{
+            padding: 5%;
+            
+            .mainContent__text{
+                padding-left: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            
+                a{
+                    display: block;
+                    text-decoration: none;
+                    button{
+                        margin-left: 5%;
+                    }
+                }
+                h1{
+                    font-size: 35pt;
+                    line-height:35pt;  
+                }
+                h1 .carpas{
+                    font-size: 60pt;
+                    line-height: 55pt;
+                }
+                p{
+                    width: 70%;
+                }
+            }
+
+            .mainContent__img{
+                display: flex;
+                align-items: center;
+                
+                img{
+                    width: 100%;
+                    min-width: 300px;
+                    border-radius: 10px;
+                    
+                }
+                .img-ani {
+                    @include animation-img();  
+                }  
+            }
+        }
+    }    
+}    

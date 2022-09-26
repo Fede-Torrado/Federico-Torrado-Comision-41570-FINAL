@@ -1,0 +1,8 @@
+[
+    {"id": "01", "tipo": "carpa tipi", "modelo": "Tipi personalizda para mascota o pijamada.", "precio": 2000, "disponible": "SI", "img": "../assets/Gallery/Tipi/galeria_0001s_0005_tipi1.jpg"},
+    {"id": "02", "tipo": "carpa tipi", "modelo": "Tipi personalizda para mascota o pijamada.", "precio": 2500, "disponible": "SI", "img": "../assets/Gallery/Tipi/galeria_0001s_0004_tipi2.jpg"},
+    {"id": "03", "tipo": "carpa tipi", "modelo": "Tipi personalizda para mascota o pijamada.", "precio": 1500, "disponible": "SI", "img": "../assets/Gallery/Tipi/galeria_0001s_0003_tipi3.jpg"},
+    {"id": "04", "tipo": "carpa tipi", "modelo": "Tipi personalizda para mascota o pijamada.", "precio": 3000, "disponible": "SI", "img": "../assets/Gallery/Tipi/galeria_0001s_0002_tipi4.jpg"},
+    {"id": "05", "tipo": "carpa tipi", "modelo": "Tipi personalizda para mascota o pijamada.", "precio": 2000, "disponible": "SI", "img": "../assets/Gallery/Tipi/galeria_0001s_0001_tipi5.jpg"},
+    {"id": "06", "tipo": "carpa tipi", "modelo": "Tipi personalizda para mascota o pijamada.", "precio": 2500, "disponible": "SI", "img": "../assets/Gallery/Tipi/galeria_0001s_0000_tipi6.jpg"}
+]

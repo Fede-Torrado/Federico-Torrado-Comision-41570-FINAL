@@ -1,0 +1,86 @@
+@import "../abstracts/colors";
+@import "../abstracts/maps";
+@import "../abstracts/mixins";
+
+
+.titulo-pagina{
+    margin: 0;
+    padding: 0;
+    padding-left: 5%;
+    padding-top: 15px;
+    background-color:$beigeC;
+    color:$grisC;
+    font-size:15pt;
+    font-weight: bold;
+    span {
+        font-weight:300;
+        font-size:15pt;
+    }
+}
+.gallery{
+    background-image: $backgroundGradient;
+    padding: 20px 5%;
+
+    @for $var from 1 through 6 {
+        .card:nth-child(#{$var}) {
+            animation-delay: 0.1s * $var;
+        }
+    }
+    .card {
+        -webkit-animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
+        animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
+        margin-bottom:20px;
+        @include animation-img();
+        border-radius: map-get($card, borderRadius);
+        img{
+            border-top-left-radius:map-get($card, borderRadius); ;
+            border-top-right-radius:map-get($card, borderRadius); ;
+        }
+        
+        .card-body {
+            
+            background-color: map-get($card, fondo);
+            .card-title {
+                color: map-get($card, color-texto);
+            }
+            .card-text {
+                color: map-get($card, color-texto);
+            }
+            a{
+                text-decoration: map-get($card, link);
+                button{
+                    @extend .buttonGallery;
+                }
+            }
+        }
+        
+        @-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .titulo-pagina{
+        padding-left: 7%;
+        font-size:25pt;
+        padding-top: 40px;
+        span {
+            font-weight:300;
+            font-size:20pt;
+        }
+       
+    }
+    .gallery{
+        @include displayFlex();
+        .card{
+            width:30%;
+            margin-bottom:40px;
+            margin-top:20px;
+            
+            button:hover{
+                box-shadow: inset 5px 0px 0px $grisC;
+                cursor: pointer;  
+            }
+        }
+    }
+}

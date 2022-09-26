@@ -1,0 +1,12 @@
+@import "../abstracts/colors";
+@import "../abstracts/maps";
+@import "../abstracts/mixins";
+
+
+
+@media screen and (min-width: 1024px) {
+    .cart-section{
+        height:100vh;
+    
+}
+}

@@ -1,0 +1,91 @@
+@import "../abstracts/colors";
+@import "../abstracts/extends";
+
+.form{
+    width: 100%;
+    background-image: $backgroundGradient;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    form{
+        max-width:500px;
+        background-color: $grisC;
+        width: 90%;
+        margin:auto;
+        padding: 30px;
+        border-radius: 4px;
+        color: white;
+        text-align: center;
+        box-shadow: 10px 10px 50px $grisC;
+
+        h1{
+            font-size: 14pt;
+            margin-bottom: 15px;
+        }
+        label{
+            text-align: center;
+            font-size: 12pt;
+            line-height: 40px;
+        }
+        input{
+            width: 100%;
+            padding: 10px;
+            background-color: $grisC;
+            border: solid 1px $violetaC;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            font-size: 15px;
+            color: rgb(206, 206, 206);
+        }
+        select{
+            width: 100%;
+            padding: 10px;
+            background-color: $grisC;
+            border: solid 1px $violetaC;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 15px;
+            color: rgb(206, 206, 206);
+        }
+        .textRadio{
+            font-size:14px;
+        }
+        #radio{
+            width: 30px;
+        }
+        textarea{
+            padding: 10px;
+            resize: none;
+            width: 90%; 
+        }
+        .terminos{
+            font-size:12px;
+        }
+        #aceptar{
+            width: 30px;
+        }
+        #reset,
+        #submit{
+            @extend .button2;
+        }
+        ::placeholder {color: rgb(206, 206, 206);}
+        ::-webkit-calendar-picker-indicator { filter: invert(1); }    
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .form{
+        form{
+            width: 30%;
+            min-width: 500px;
+            .button-form{
+                transition: ease-out 0.3s; 
+                &:hover{
+                    box-shadow: inset 550px 0px 0px $beigeC;
+                    cursor: pointer;  
+                }    
+            }
+        }
+    } 
+}    

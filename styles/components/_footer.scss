@@ -1,0 +1,94 @@
+@import "../abstracts/colors";
+
+.footer {
+    background-color: $grisC;
+
+    .contact-social{
+        padding-right: 5%;
+        text-align: right;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        
+        .contact{
+            display:none;
+        }
+        
+        .social img{
+            padding-left: 5px;
+        }
+    }
+
+    .legal{
+        background-color:$grisOscuroC;
+        padding-top: 15px;
+
+        a{
+            color: $beigeC;
+        }
+
+        p{
+            font-size: 7pt;
+            text-align: center;
+            color:$beigeC;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        .contact-social{
+            padding:25px 5%;
+            
+            .contact{
+                margin: 0;
+                padding:0 12px;
+                display: flex;
+                flex-direction: column;
+                align-items:flex-start;
+                justify-content:center;
+                
+                a{
+                    text-decoration: none;
+                    color:$beigeC;
+                    transition: ease-out 0.3s;
+                    &:hover {
+                        color: $violetaC;
+                        text-decoration: underline;
+                    }
+                }
+                h2{
+                    font-size: 12pt;
+                    color:$beigeC; 
+                }
+                p{
+                    color:$beigeC;
+                    margin: 0;
+                    text-align: left;
+                    font-size: 10pt; 
+                }
+            }
+
+            .social {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                
+                img {
+                    padding-left: 10px;
+                    transition: all ease 0.3s;
+                    &:hover{
+                        width: 95%;
+                    } 
+                }
+            }
+        }
+        .legal {
+            p{
+                a:hover{
+                    color:$violetaC;
+                }
+            }
+        }
+    }    
+        
+}    

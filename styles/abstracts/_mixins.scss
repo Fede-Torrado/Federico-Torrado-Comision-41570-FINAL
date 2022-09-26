@@ -1,0 +1,13 @@
+@mixin displayFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@mixin animation-img {
+    transition: all ease 0.3s;
+    &:hover {
+        box-shadow: 0 0 20px $violetaC;
+        opacity: 85%;   
+    }    
+}
