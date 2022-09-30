@@ -53,3 +53,4 @@ const addToCart = (id) => {
 };
 
 renderProducts();
+

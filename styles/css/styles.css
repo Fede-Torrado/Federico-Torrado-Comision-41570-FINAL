@@ -377,9 +377,109 @@ img.navbar-toggler {
     cursor: pointer;
   }
 }
+.button1, .mainContent-background .mainContent .mainContent__text a button {
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6e77a6;
+  color: white;
+  font-size: 13px;
+  transition: ease-out 0.3s;
+}
+.button1:hover, .mainContent-background .mainContent .mainContent__text a button:hover {
+  box-shadow: inset 130px 0px 0px #3a3939;
+  cursor: pointer;
+}
+
+.buttonGallery, .gallery .card .card-body a button {
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6e77a6;
+  color: white;
+  font-size: 13px;
+  transition: ease-out 0.3s;
+}
+.buttonGallery:hover, .gallery .card .card-body a button:hover {
+  box-shadow: inset 95px 0px 0px #3a3939;
+  cursor: pointer;
+}
+
+.button2, .form form #reset,
+.form form #submit {
+  width: 100%;
+  background-color: #6e77a6;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 12pt;
+  margin-bottom: 10px;
+  color: white;
+}
+
 @media screen and (min-width: 1024px) {
-  .cart-section {
+  .cartBody {
+    background-image: linear-gradient(#c3ac89, #c3ac89, #6e77a6);
+    padding-top: 15px;
+    padding-left: 30px;
     height: 100vh;
+  }
+  .cartBody .mainContentCart {
+    padding-top: 15px;
+    padding-left: 30px;
+    width: 670px;
+  }
+  .cartBody .mainContentCart h2 {
+    color: #3a3939;
+  }
+  .cartBody .mainContentCart .contentCart {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid;
+    width: 100%;
+  }
+  .cartBody .mainContentCart .contentCart img {
+    width: 50px;
+    border-radius: 10px;
+    display: inline;
+  }
+  .cartBody .mainContentCart .contentCart h5 {
+    display: inline;
+  }
+  .cartBody .mainContentCart .contentCart p {
+    display: inline;
+  }
+  .cartBody .mainContentCart .contentCart .xRemove {
+    width: 30px;
+  }
+  .cartBody .total {
+    padding-left: 30px;
+    color: #3a3939;
+    padding-top: 15px;
+  }
+  .cartBody .total p {
+    display: inline;
+    margin-left: 15px;
+  }
+  .cartBody .total .btnComprar {
+    display: inline;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6e77a6;
+    color: white;
+    font-size: 13px;
+    transition: ease-out 0.3s;
+  }
+  .cartBody .total .btnComprar:hover {
+    box-shadow: inset 95px 0px 0px #3a3939;
+    cursor: pointer;
   }
 }
 .about {

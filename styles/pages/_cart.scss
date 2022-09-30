@@ -1,12 +1,71 @@
+@import "../abstracts/extends";
 @import "../abstracts/colors";
 @import "../abstracts/maps";
 @import "../abstracts/mixins";
 
 
-
 @media screen and (min-width: 1024px) {
-    .cart-section{
-        height:100vh;
+.cartBody{
+        background-image: $backgroundGradient; 
+        padding-top: 15px;
+        padding-left: 30px;
+        height: 100vh;
+
+        .mainContentCart{
+            padding-top: 15px;
+            padding-left: 30px;
+            width: 670px;
+            h2 {
+                color: $grisC;
+            }
+            .contentCart{
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border-bottom: 1px solid;
+                width: 100%;
+                
+                img {
+                    width: 50px;
+                    border-radius:10px;
+                    display: inline;
+                }
+                h5{
+                    display: inline;
+                }
+                p{
+                    display: inline;
+                }
+                .xRemove{
+                    width: 30px;
+                }
+            }
+        }
+        .total{
+            padding-left: 30px;
+            color: $grisC;
+            padding-top: 15px;
+            p{
+                display: inline;
+                margin-left: 15px;
+            }
+            .btnComprar{
+                display: inline;
+                padding: 10px;
+                margin-top: 20px;
+                margin-left: 15px;
+                border:none;
+                border-radius: 5px;
+                background-color:$violetaC;
+                color: white;
+                font-size: 13px;
+                transition: ease-out 0.3s;
+                &:hover {
+                    box-shadow: inset 95px 0px 0px $grisC;
+                    cursor: pointer;   
+                }
+            }
+        }
+             
+}    
     
-}
 }
