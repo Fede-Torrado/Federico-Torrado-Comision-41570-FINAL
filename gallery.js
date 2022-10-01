@@ -1,7 +1,7 @@
-
 const producto = [];
 let cart = JSON.parse(localStorage.getItem('carrito'));
 
+//MOSTRAR PRODUCTOS//
 const renderProducts = ()=> {
 fetch ('../data.json')
 .then ((res) => res.json())
@@ -11,13 +11,13 @@ fetch ('../data.json')
       producto.push (json[i]);
       html += `
       <div class="card img-ani">
-      <img src="${json[i].img}">
+      <img src="${producto[i].img}">
       <div class="card-body">
-        <h5 class="card-title">${json[i].tipo}</h5>
-        <p class="card-text">${json[i].modelo}.</p>
-        <p class="card-text">$${json[i].precio}.</p>
-        <p class="card-text">Disponible: ${json[i].disponible}.</p>
-        <a><button onclick="addToCart(${json[i].id})">Agregar al carrito</button></a>
+        <h5 class="card-title">${producto[i].tipo}</h5>
+        <p class="card-text">${producto[i].modelo}.</p>
+        <p class="card-text">$${producto[i].precio}.</p>
+        <p class="card-text">Disponible: ${producto[i].disponible}.</p>
+        <a><button onclick="addToCart(${producto[i].id})">Agregar al carrito</button></a>
       </div>
     </div>`
   };
@@ -28,13 +28,14 @@ fetch ('../data.json')
 }); 
 };
 
+//AGREGAR AL CARRITO//
 const addToCart = (id) => {
   const productoCompleto = producto.find((item) => item.id == id);
   cart.push(productoCompleto);
   let storage = () =>{ 
     return localStorage.setItem('carrito', JSON.stringify(cart));}
   storage();
- 
+  //Libreria//  
   Toastify({
     text: "Agregado al Carrito",
     duration: 3000,
@@ -49,8 +50,6 @@ const addToCart = (id) => {
     },
     onClick: function(){} 
   }).showToast();
-    
 };
 
 renderProducts();
-

@@ -1,8 +1,14 @@
 [
-    {"id": "01", "tipo": "carpa tipi", "modelo": "Tipi personalizda para mascota o pijamada.", "precio": 2000, "disponible": "SI", "img": "../assets/Gallery/Tipi/galeria_0001s_0005_tipi1.jpg"},
-    {"id": "02", "tipo": "carpa tipi", "modelo": "Tipi personalizda para mascota o pijamada.", "precio": 2500, "disponible": "SI", "img": "../assets/Gallery/Tipi/galeria_0001s_0004_tipi2.jpg"},
-    {"id": "03", "tipo": "carpa tipi", "modelo": "Tipi personalizda para mascota o pijamada.", "precio": 1500, "disponible": "SI", "img": "../assets/Gallery/Tipi/galeria_0001s_0003_tipi3.jpg"},
-    {"id": "04", "tipo": "carpa tipi", "modelo": "Tipi personalizda para mascota o pijamada.", "precio": 3000, "disponible": "SI", "img": "../assets/Gallery/Tipi/galeria_0001s_0002_tipi4.jpg"},
-    {"id": "05", "tipo": "carpa tipi", "modelo": "Tipi personalizda para mascota o pijamada.", "precio": 2000, "disponible": "SI", "img": "../assets/Gallery/Tipi/galeria_0001s_0001_tipi5.jpg"},
-    {"id": "06", "tipo": "carpa tipi", "modelo": "Tipi personalizda para mascota o pijamada.", "precio": 2500, "disponible": "SI", "img": "../assets/Gallery/Tipi/galeria_0001s_0000_tipi6.jpg"}
+    {"id": "01","categoria": "tipi", "tipo": "Carpa Tipi", "modelo": "Tipi personalizda para mascota o pijamada.", "precio": 2000, "disponible": "SI", "img": "../assets/Gallery/Tipi/galeria_0001s_0005_tipi1.jpg"},
+    {"id": "02","categoria": "tipi", "tipo": "Carpa Tipi", "modelo": "Tipi personalizda para mascota o pijamada.", "precio": 2500, "disponible": "SI", "img": "../assets/Gallery/Tipi/galeria_0001s_0004_tipi2.jpg"},
+    {"id": "03","categoria": "tipi", "tipo": "Carpa Tipi", "modelo": "Tipi personalizda para mascota o pijamada.", "precio": 1500, "disponible": "SI", "img": "../assets/Gallery/Tipi/galeria_0001s_0003_tipi3.jpg"},
+    {"id": "04","categoria": "tipi", "tipo": "Carpa Tipi", "modelo": "Tipi personalizda para mascota o pijamada.", "precio": 3000, "disponible": "SI", "img": "../assets/Gallery/Tipi/galeria_0001s_0002_tipi4.jpg"},
+    {"id": "05","categoria": "tipi", "tipo": "Carpa Tipi", "modelo": "Tipi personalizda para mascota o pijamada.", "precio": 2000, "disponible": "SI", "img": "../assets/Gallery/Tipi/galeria_0001s_0001_tipi5.jpg"},
+    {"id": "06","categoria": "tipi", "tipo": "Carpa Tipi", "modelo": "Tipi personalizda para mascota o pijamada.", "precio": 2500, "disponible": "SI", "img": "../assets/Gallery/Tipi/galeria_0001s_0000_tipi6.jpg"},
+    {"id": "07","categoria": "deco", "tipo": "Alfombra", "modelo": "alfombra de arpillera.", "precio": 2500, "disponible": "SI", "img": "../assets/Gallery/Deco/galeria_0000s_0004_deco1.jpg"},
+    {"id": "08","categoria": "deco", "tipo": "Almohadones", "modelo": "Almohadones decorativos estilo campo.", "precio": 2500, "disponible": "SI", "img": "../assets/Gallery/Deco/galeria_0000s_0003_deco2.jpg"},
+    {"id": "09","categoria": "deco", "tipo": "Almohadón estrella", "modelo": "Almohadones con formas personalizadas.", "precio": 2500, "disponible": "SI", "img": "../assets/Gallery/Deco/galeria_0000s_0002_deco3.jpg"},
+    {"id": "10","categoria": "deco", "tipo": "Estuches de tela", "modelo": "Estuches de tela para guardar lo que quieras.", "precio": 2500, "disponible": "SI", "img": "../assets/Gallery/Deco/galeria_0000s_0001_deco4.jpg"},
+    {"id": "11","categoria": "deco", "tipo": "Colgante decorativo", "modelo": "Colgante decorativo para poner donde mas te guste.", "precio": 2500, "disponible": "SI", "img": "../assets/Gallery/Deco/galeria_0000s_0000_deco5.jpg"}
+    
 ]
