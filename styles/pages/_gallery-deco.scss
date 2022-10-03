@@ -13,8 +13,17 @@
     font-size:15pt;
     font-weight: bold;
     span {
-        font-weight:300;
-        font-size:15pt;
+        color:$beigeC;
+        background-color:$grisC;
+        padding: 5px 15px;
+        border-radius:15px;
+        font-weight:500;
+        font-size:11pt;
+        margin-right: 20px;
+        &:hover{
+        cursor:pointer;
+        color: $violetaC;
+        } 
     }
 }
 .gallery{
@@ -65,11 +74,19 @@
         font-size:25pt;
         padding-top: 40px;
         span {
-            font-weight:300;
-            font-size:20pt;
+            color:$beigeC;
+            background-color:$grisC;
+            padding: 5px 15px;
+            border-radius:15px;
+            font-weight:500;
+            font-size:15pt;
+            margin-right:20px;
+            &:hover{
+            cursor:pointer;
+            color: $violetaC;
+            } 
         }
-       
-    }
+    }    
     .gallery{
         @include displayFlex();
         .card{

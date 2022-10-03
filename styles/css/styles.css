@@ -32,10 +32,6 @@ img.navbar-toggler {
   .nav-item {
     padding-left: 50px;
   }
-  .nav-item img {
-    width: 30px;
-    filter: invert(80%) sepia(26%) saturate(362%) hue-rotate(357deg) brightness(85%) contrast(85%);
-  }
   ul.navbar-nav {
     margin-right: 5%;
   }
@@ -126,16 +122,17 @@ img.navbar-toggler {
   color: #6e77a6;
 }
 
-.decoSelect a {
-  color: #6e77a6;
-}
-
 .aboutSelect a {
   color: #6e77a6;
 }
 
 .contactoSelect a {
   color: #6e77a6;
+}
+
+.cartColor a img {
+  width: 30px;
+  filter: invert(59%) sepia(15%) saturate(1029%) hue-rotate(193deg) brightness(77%) contrast(85%);
 }
 
 .button1, .mainContent-background .mainContent .mainContent__text a button {
@@ -274,8 +271,17 @@ img.navbar-toggler {
   font-weight: bold;
 }
 .titulo-pagina span {
-  font-weight: 300;
-  font-size: 15pt;
+  color: #c3ac89;
+  background-color: #3a3939;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 11pt;
+  margin-right: 20px;
+}
+.titulo-pagina span:hover {
+  cursor: pointer;
+  color: #6e77a6;
 }
 
 .gallery {
@@ -359,8 +365,17 @@ img.navbar-toggler {
     padding-top: 40px;
   }
   .titulo-pagina span {
-    font-weight: 300;
-    font-size: 20pt;
+    color: #c3ac89;
+    background-color: #3a3939;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 15pt;
+    margin-right: 20px;
+  }
+  .titulo-pagina span:hover {
+    cursor: pointer;
+    color: #6e77a6;
   }
   .gallery {
     display: flex;
@@ -421,65 +436,80 @@ img.navbar-toggler {
   color: white;
 }
 
+.cartBody {
+  min-height: 100vh;
+  background-image: linear-gradient(#c3ac89, #c3ac89, #6e77a6);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.cartBody .mainContentCart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.504);
+  border-radius: 10px;
+}
+.cartBody .mainContentCart h2 {
+  color: #3a3939;
+}
+.cartBody .mainContentCart .contentCart {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid;
+  width: 100%;
+}
+.cartBody .mainContentCart .contentCart img {
+  width: 50px;
+  border-radius: 10px;
+  display: inline;
+}
+.cartBody .mainContentCart .contentCart h5 {
+  margin-top: 15px;
+}
+.cartBody .mainContentCart .contentCart .xRemove {
+  width: 35px;
+}
+.cartBody .total {
+  color: #3a3939;
+  padding-bottom: 30px;
+  padding-top: 15px;
+  background-color: rgba(255, 255, 255, 0.504);
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+.cartBody .total p {
+  display: inline;
+  margin-left: 15px;
+}
+.cartBody .total .btnComprar {
+  display: inline;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6e77a6;
+  color: white;
+  font-size: 13px;
+  transition: ease-out 0.3s;
+}
+.cartBody .total .btnComprar:hover {
+  box-shadow: inset 95px 0px 0px #3a3939;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 1024px) {
-  .cartBody {
-    background-image: linear-gradient(#c3ac89, #c3ac89, #6e77a6);
-    padding-top: 15px;
-    padding-left: 30px;
-    height: 100vh;
-  }
   .cartBody .mainContentCart {
-    padding-top: 15px;
-    padding-left: 30px;
-    width: 670px;
-  }
-  .cartBody .mainContentCart h2 {
-    color: #3a3939;
-  }
-  .cartBody .mainContentCart .contentCart {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid;
-    width: 100%;
-  }
-  .cartBody .mainContentCart .contentCart img {
-    width: 50px;
-    border-radius: 10px;
-    display: inline;
-  }
-  .cartBody .mainContentCart .contentCart h5 {
-    display: inline;
-  }
-  .cartBody .mainContentCart .contentCart p {
-    display: inline;
-  }
-  .cartBody .mainContentCart .contentCart .xRemove {
-    width: 30px;
+    width: 40%;
   }
   .cartBody .total {
-    padding-left: 30px;
-    color: #3a3939;
-    padding-top: 15px;
-  }
-  .cartBody .total p {
-    display: inline;
-    margin-left: 15px;
-  }
-  .cartBody .total .btnComprar {
-    display: inline;
-    padding: 10px;
-    margin-top: 20px;
-    margin-left: 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: #6e77a6;
-    color: white;
-    font-size: 13px;
-    transition: ease-out 0.3s;
-  }
-  .cartBody .total .btnComprar:hover {
-    box-shadow: inset 95px 0px 0px #3a3939;
-    cursor: pointer;
+    width: 40%;
   }
 }
 .about {

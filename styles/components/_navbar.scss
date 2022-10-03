@@ -13,12 +13,6 @@
     }
 }
 
-.decoSelect{
-    a{
-        color: $violetaC;  
-    }
-}
-
 .aboutSelect{
     a{
         color: $violetaC;  
@@ -28,5 +22,14 @@
 .contactoSelect{
     a{
         color: $violetaC;  
+    }
+}
+
+.cartColor{
+    a{
+        img {
+            width:30px;
+            filter: invert(59%) sepia(15%) saturate(1029%) hue-rotate(193deg) brightness(77%) contrast(85%);
+        }
     }
 }

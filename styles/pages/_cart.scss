@@ -4,68 +4,163 @@
 @import "../abstracts/mixins";
 
 
-@media screen and (min-width: 1024px) {
 .cartBody{
-        background-image: $backgroundGradient; 
-        padding-top: 15px;
-        padding-left: 30px;
-        height: 100vh;
+    min-height:100vh;
+    background-image: $backgroundGradient;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    .mainContentCart{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+        text-align:center;
+        background-color: rgba(255, 255, 255, 0.504);
+        border-radius:10px;
 
-        .mainContentCart{
-            padding-top: 15px;
-            padding-left: 30px;
-            width: 670px;
-            h2 {
-                color: $grisC;
-            }
-            .contentCart{
-                padding-top: 15px;
-                padding-bottom: 15px;
-                border-bottom: 1px solid;
-                width: 100%;
-                
-                img {
-                    width: 50px;
-                    border-radius:10px;
-                    display: inline;
-                }
-                h5{
-                    display: inline;
-                }
-                p{
-                    display: inline;
-                }
-                .xRemove{
-                    width: 30px;
-                }
-            }
-        }
-        .total{
-            padding-left: 30px;
+        h2 {
             color: $grisC;
+            
+        }
+        .contentCart{
             padding-top: 15px;
-            p{
+            padding-bottom: 15px;
+            border-bottom: 1px solid;
+            width: 100%;
+            
+            img {
+                width: 50px;
+                border-radius:10px;
                 display: inline;
-                margin-left: 15px;
             }
-            .btnComprar{
-                display: inline;
-                padding: 10px;
-                margin-top: 20px;
-                margin-left: 15px;
-                border:none;
-                border-radius: 5px;
-                background-color:$violetaC;
-                color: white;
-                font-size: 13px;
-                transition: ease-out 0.3s;
-                &:hover {
-                    box-shadow: inset 95px 0px 0px $grisC;
-                    cursor: pointer;   
-                }
+            h5{
+                margin-top: 15px;
+            }
+            .xRemove{
+                width: 35px;
+            }
+        }  
+    }
+    .total{
+        color: $grisC;
+        padding-bottom: 30px;
+        padding-top: 15px;
+        background-color: rgba(255, 255, 255, 0.504);
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+        border-radius: 10px;
+        p{
+            display: inline;
+            margin-left: 15px;
+        }
+        .btnComprar{
+            display: inline;
+            padding: 10px;
+            margin-top: 20px;
+            margin-left: 15px;
+            border:none;
+            border-radius: 5px;
+            background-color:$violetaC;
+            color: white;
+            font-size: 13px;
+            transition: ease-out 0.3s;
+            &:hover {
+                box-shadow: inset 95px 0px 0px $grisC;
+                cursor: pointer;   
             }
         }
-             
+    }    
+
+};
+
+@media screen and (min-width: 1024px) {
+
+.cartBody{
+    .mainContentCart{
+        width: 40%;
+    }
+    .total{
+        width: 40%;
+    }
+      
 }    
     
 }
+
+
+
+
+
+
+
+
+
+// @media screen and (min-width: 1024px) {
+// .cartBody{
+//         background-image: $backgroundGradient; 
+//         padding-top: 15px;
+//         padding-left: 30px;
+//         height: 100vh;
+
+//         .mainContentCart{
+//             padding-top: 15px;
+//             padding-left: 30px;
+//             width: 670px;
+//             h2 {
+//                 color: $grisC;
+//             }
+//             .contentCart{
+//                 padding-top: 15px;
+//                 padding-bottom: 15px;
+//                 border-bottom: 1px solid;
+//                 width: 100%;
+                
+//                 img {
+//                     width: 50px;
+//                     border-radius:10px;
+//                     display: inline;
+//                 }
+//                 h5{
+//                     display: inline;
+//                 }
+//                 p{
+//                     display: inline;
+//                 }
+//                 .xRemove{
+//                     width: 30px;
+//                 }
+//             }
+//         }
+//         .total{
+//             padding-left: 30px;
+//             color: $grisC;
+//             padding-top: 15px;
+//             p{
+//                 display: inline;
+//                 margin-left: 15px;
+//             }
+//             .btnComprar{
+//                 display: inline;
+//                 padding: 10px;
+//                 margin-top: 20px;
+//                 margin-left: 15px;
+//                 border:none;
+//                 border-radius: 5px;
+//                 background-color:$violetaC;
+//                 color: white;
+//                 font-size: 13px;
+//                 transition: ease-out 0.3s;
+//                 &:hover {
+//                     box-shadow: inset 95px 0px 0px $grisC;
+//                     cursor: pointer;   
+//                 }
+//             }
+//         }
+             
+// }    
+    
+// }

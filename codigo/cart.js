@@ -6,13 +6,13 @@ const renderCart = ()=> {
   let html = '';
   for (let i = 0; i < cartLleno.length; i++) {
       html += `
-      <div class="contentCart">
-        <img src="${cartLleno[i].img}">
-        <h5 class="card-title">${cartLleno[i].tipo} |</h5>
-        <p class="card-text">${cartLleno[i].modelo}</p>
-        <p class="card-text"><b> | $${cartLleno[i].precio}</b></p>
-        <img class="xRemove" src="../assets/borrar.svg" onclick="removeFromCart(${i})"></img>
-      </div>`
+        <div class="contentCart">
+          <img src="${cartLleno[i].img}">
+          <h5 class="card-title">${cartLleno[i].tipo} </h5>
+          <p class="card-text">${cartLleno[i].modelo}</p>
+          <p class="card-text"><b>  $${cartLleno[i].precio}</b></p>
+          <img class="xRemove" src="../assets/borrar.svg" onclick="removeFromCart(${i})"></img> 
+        </div>`
   };
   document.getElementById('mostrarProducto').innerHTML = html;
 };
